@@ -1,0 +1,244 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #cc9755;
+  --main-transition: 0.3s;
+  --line-height: 1.5;
+  --p-color: #777;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* about-us */
+/* .about-us {
+  background-color: #f3f2ee;
+}
+.about-us .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.about-us .container h3 {
+  font-size: 25px;
+  margin: 0 0 15px 0;
+}
+.about-us .container .links {
+  display: flex;
+  align-items: flex-end;
+}
+.about-us .container .links a {
+  color: #000;
+  display: block;
+  margin-right: 5px;
+}
+.about-us .container .links i {
+  display: block;
+  margin-right: 5px;
+}
+.about-us .container .links a:last-of-type {
+  color: #777;
+} */
+
+/* quote */
+/* .quote {
+  display: flex;
+}
+.quote .image,
+.quote .box {
+  flex: 50%;
+}
+.quote .box {
+  text-align: center;
+  background-color: #f3f2ee;
+  padding: 40px;
+}
+.quote .box > i {
+  display: block;
+  font-size: 30px;
+  color: #c62828;
+  margin-bottom: 30px;
+}
+.quote .box q {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.8;
+  display: block;
+  margin-bottom: 30px;
+}
+.quote .box .profile {
+  display: flex;
+  margin: 0 auto 0;
+  gap: 20px;
+  align-items: center;
+  width: fit-content;
+}
+.quote .box .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.quote .box .profile .text {
+  text-align: left;
+}
+.quote .box .profile .text span {
+  display: block;
+}
+.quote .box .profile .text span:first-of-type {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.quote .box .profile .text span:last-of-type {
+  color: #777;
+  font-style: italic;
+}
+.quote .image img {
+  max-width: 100%;
+} */
+
+/* statics */
+.statics .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.statics .container .box {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.statics .container .box h3 {
+  font-size: 45px;
+}
+.statics .container .box span {
+  display: block;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #777;
+}
+
+/* partner */
+.partner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.partner .container {
+  text-align: center;
+}
+.partner .container h2 {
+  text-transform: capitalize;
+  font-size: 15px;
+  margin: 0 auto 15px;
+  color: #c62828;
+}
+.partner .container h3 {
+  font-size: 30px;
+  margin: 0 0 50px 0;
+}
+.partner .container .clients-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.partner .container .clients-gallery img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.partner .container .clients-gallery img:hover {
+  opacity: 1;
+}
+
+/* latest-news */
+/* .latest-news {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.latest-news .container {
+  text-align: center;
+}
+.latest-news .container > h3 {
+  color: #c62828;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.latest-news .container > h4 {
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.latest-news .container .news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.latest-news .container .news .image img {
+  max-width: 100%;
+  height: 250px;
+}
+.latest-news .container .news .box .text {
+  background-color: #fff;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  width: 80%;
+  top: -50px;
+  left: 10%;
+  box-shadow: 0px 0px 5px 0px #0000001a;
+}
+.latest-news .container .news .box .text h2 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.latest-news .container .news .box .text h3 {
+  margin-bottom: 10px;
+}
+.latest-news .container .news .box .text a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 17px;
+  border-bottom: 2px solid #000;
+} */

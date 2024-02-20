@@ -1,0 +1,81 @@
+/* 
+#EAc696
+#C8AE7d
+#765827
+#65451F
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    /* background:url("D:\Java Script\JS Project _Alma store\photo_items\Pin on Aesthetic backgrounds.jpeg"); */
+    /* background-image: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .m-container {
+    /* background-color: #ffffff; */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .m-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .m-input-group {
+    margin-bottom: 15px;
+  }
+  
+  
+  .m-input-group label {
+    display: block;
+    
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .m-input-group input[type="text"],
+  .m-input-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .m-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #65451F;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* .h_rememberme{
+   font-weight: 20px;
+  } */
+  
+  .m-container button:hover {
+    background-color: #65451F;
+  }

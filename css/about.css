@@ -1,0 +1,166 @@
+/* about bar */
+.about-us{
+    background-color: #f3f2ee;
+    margin-top: 100px;
+}
+.about-us .container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.about-us .container h3{
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+.about-us .container .links{
+    display: flex;
+    align-items: flex-end;
+}
+.about-us .container .links a{
+    color: #000;
+    display: block;
+    margin-right: 5px;
+}
+.about-us .container .links i{
+    display: block;
+    margin-right: 5px;
+}
+.about-us .container .links a:last-of-type{
+    color: #777;
+}
+
+/* main section */
+.container .image img{
+    width: 100%;
+}
+.container .e-text{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+}
+
+/* view section */
+.quote{
+    display: flex;
+    margin-top: 60px;
+}
+  .quote .image,
+  .quote .box {
+    flex: 50%;
+}
+.quote .box{
+    text-align: center;
+    background-color: #f3f2ee;
+    padding: 40px;
+}
+.quote .box > i{
+    display: block;
+    font-size: 30px;
+    color: #c62828;
+    margin-bottom: 30px;
+}
+.quote .box q{
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.8;
+    display: block;
+    margin-bottom: 30px;
+}
+.quote .box .profile{
+    display: flex;
+    margin: 0 auto 0;
+    gap: 20px;
+    align-items: center;
+    width: fit-content;
+}
+.quote .box .profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.quote .box .profile .text{
+    text-align: left;
+}
+.quote .box .profile .text span{
+    display: block;
+}
+.quote .box .profile .text span:first-of-type{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.quote .box .profile .text span:last-of-type{
+    color: #777;
+    font-style: italic;
+}
+.quote .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* statics */
+.statics .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  .statics .container .box {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .statics .container .box h3 {
+    font-size: 45px;
+  }
+  .statics .container .box span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #777;
+  }
+
+/* Reviews */
+.reviews{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.reviews h1{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #000;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: calc(100%/3);
+    max-width: calc(100%/3);
+    padding: 5px;
+}
+
+.review{
+    background: #eeecec;
+    padding: 30px;
+}
+
+.review img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: #fac031;
+    margin-bottom: 20px;
+}  

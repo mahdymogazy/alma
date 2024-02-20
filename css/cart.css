@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.h-header{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.h-header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.h-cart{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    width: 80px;
+    border-radius: 3px;
+} 
+.fa-solid{
+    color:goldenrod ;
+}
+.h-cart p{
+    height: 22px;
+    width: 22px;
+    align-items: center;
+    display: flex;
+    background-color: goldenrod;
+    border-radius: 22px;
+    justify-content: center;
+    color: #fff
+}
+
+
+.h-container{
+    width: 70%;
+    margin-bottom: 30px;
+    display: flex;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+.h-slidebar{
+    width: 40%;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+ .h-head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+ }
+ .h-foot{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+ }
+ .h-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+    border: goldenrod;
+
+
+ }
+ .h-imgBox{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ }
+ .h-images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .h-bottom{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+    justify-content: space-between;
+ }
+ h2{
+    color: red;
+    font-size: 20px;
+ }
+
+ button{
+    color: #eee;
+    width: 100%;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+ }
+
+ button:hover{
+    background-color: #333;
+ }
+ .h-cartItem{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px 10px;
+    border-radius: 3px;
+    border-bottom: 1px solid gray;
+    background-color: #fff;
+ }
+.h-row-img{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid goldenrod;
+    border-radius: 50px;
+}
+.rowImg{
+    border-radius: 50%;
+    max-width: 43px;
+    max-height: 43px;
+}
+.fa-trash:hover{
+    color: #333;
+    cursor: pointer;
+}

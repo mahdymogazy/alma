@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/signup.css">  
+    <title>Alma Store</title>
+   
+</head>
+<body>
+    <div class="m-container">
+        <h2>Sign Up</h2>
+        <form action="#">
+            <div class="m-input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username"  required placeholder="enter username" min="8" max="15">
+              
+            </div>
+            <div class="m-input-group">
+                <label for="email">email</label>
+                <input type="text" id="email"  required placeholder="enter your email">
+              </div>
+
+            <div class="m-input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password"  required placeholder="enter your password">
+                    </div>
+            <div class="m-input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="confirm your Password">
+            </div>
+           
+            <button  onclick="SignUp()">Sign Up</button>
+                   
+        </form>
+    </div>
+</body>
+<script src="js/signup.js"></script>
+</html>

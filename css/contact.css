@@ -1,0 +1,142 @@
+/* contact bar */
+.contact{
+    background-color: #f3f2ee;
+    margin-top: 100px;
+}
+.contact .container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact .container h3{
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+.contact .container .links{
+    display: flex;
+    align-items: flex-end;
+}
+.contact .container .links a{
+    color: #000;
+    display: block;
+    margin-right: 5px;
+}
+.contact .container .links i{
+    display: block;
+    margin-right: 5px;
+}
+.contact .container .links a:last-of-type{
+    color: #777;
+}
+
+/* contact */
+.h_contact {
+    margin-top: 50px;
+    background-color:floralwhite;
+  }
+  
+  .h_contact .h_container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url();
+    /* margin-bottom: -55px; */
+  }
+  
+  .h_contact .h_container .h_contact-info,
+  .h_contact .h_container form {
+    width: 48%;
+  }
+  
+  .h_contact .h_container .h_contact-info h1,
+  .h_contact .h_container .h_contact-info h2 {
+    font-weight: 100;
+  }
+  
+  .h_contact .h_container .h_contact-info h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .h_contact .h_container .h_contact-info h2 {
+    border: 1px solid #eee;
+    padding: 30px 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  .h_contact .h_container .h_contact-info h1 {
+    color: #65451f;
+    margin-bottom: 20px;
+  }
+  
+  .h_contact .h_container .h_contact-info h2 {
+    border: 1px solid #eee;
+    padding: 30px 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #65451f;
+  }
+  
+  .h_contact .h_container .h_contact-info h2 span {
+    color: #65451f;
+  }
+  
+  .h_contact .h_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .h_contact .h_container form input[type="text"],
+  .h_contact .h_container form input[type="email"] {
+    padding: 20px 15px;
+    border: 1px solid #eee;
+  }
+  
+  .h_contact .h_container form input[type="text"]::placeholder,
+  .h_contact .h_container form input[type="email"]::placeholder,
+  .h_contact .h_container form textarea::placeholder {
+    color: #999;
+    font-size: 16px;
+  }
+  
+  .h_contact .h_container form textarea {
+    height: 150px;
+    padding: 20px 15px;
+    border: 1px solid #eee;
+    resize: none;
+  }
+  
+  .h_contact .h_container form input[type="text"]:focus,
+  .h_contact .h_container form input[type="email"]:focus,
+  .h_contact .h_container form textarea:focus {
+    outline: none;
+  }
+  
+  .h_contact .h_container form input[type="submit"] {
+    border: none;
+    padding: 20px 15px;
+    width: 40%;
+    background-color: #EAC696;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all.42s ease;
+    border-radius: 25px;
+  }
+  
+  .h_contact .h_container form input[type="submit"]:hover {
+    background-color: #65451f;
+    color: white;
+  }
+  
+  .h_container .h_iframe-container {
+    margin-top: 60px;
+  }
+  
+  .h_container .h_iframe-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 1px solid #eee;
+  }

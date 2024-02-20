@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Alma Store</title>
+</head>
+<body onload="myCart()">
+    <div class="h-header">
+        <p class="h-logo">Alma </p>
+        <div class="h-cart"><i class="fa-solid fa-cart-shopping" style="color: #0c0d0d;"></i><p id="count"> 0</p></div>
+    </div>
+    <div id="h-container">
+        <div id="root"></div>
+        <div class="h-slidebar">
+            <div class="h-head"><p>My Cart</p></div>
+        
+        <div id="h-cartItem">Your cart is empty
+            <!-- <button onclick="myCart()"></button> -->
+        </div>
+        <div class="h-foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+        </div>
+        </div>
+    </div>
+<div id="myproducts"> </div>
+
+    <script src="js/alma.js"></script>   
+</body>
+
+</html>

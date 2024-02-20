@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- haeder -->
+    <div class="header">
+        <a href="#" class="logo"><img src="images/57aace9c6f7252b5c33a693e8669e166-removebg-preview (1).png"></a>
+          <div class="e-navmenu">
+            <a href="index.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+          </div>
+        <div class="e-navicon">
+          <a href="#"><i class='bx bx-search'></i></a>
+          <a href="cart.html"><i class='bx bx-cart'></i></a>
+        </div>
+        <div class="e-right">
+          <a href="signup.html">signup</a>
+          <a href="login.html">login</a>
+        </div>
+    </div>
+
+    <!-- shop bar -->
+    <section class="shop">
+        <div class="container">
+          <h3>Shop</h3>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <i class="fa fa-angle-right"></i>
+            <a href="#">Shop</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- product section -->
+    <section class="products">
+        <div class="container">
+            <div class="h-showRow">
+                <div class="container-left">
+                    <div class="h-search-bar">
+                        <form action="">
+                            <input type="search" id="search-item" placeholder="seach here..." onkeyup="search()">
+                            <button>
+                                <span><a href="#"><i class='bx bx-search'></i></a></span>
+                            </button>
+                        </form>
+                        <div class="sort">
+                            <label for="sort">Sort by:</label>
+                            <select name="sort" id="sort">
+                                <option value="az" onclick="sortTitleAscending()">A to Z</option>
+                                <option value="za" onclick="sortLow()">Z to A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span>Categories</span>
+                    <div class="h-filter">
+                        <div class="h-categories">
+                            <div class="h-card-body">
+                                <div class="h-collapse">
+                                    <ul>
+                                        <li><a onclick="showAllProducts()" href="#">All</a></li>
+                                        <li><a onclick="filter('Watch')" href="#">Watches</a></li>
+                                        <li><a onclick="filter('Shirt')" href="#">Shirts</a></li>
+                                        <li><a onclick="filter('T-Shirt')" href="#">T-Shirts</a></li>
+                                        <li><a onclick="filter('Bag')" href="#">Bags</a></li>
+                                        <li><a onclick="filter('Glasses')" href="#">Glasses</a></li>
+                                        <li><a onclick="filter('Shoes')" href="#">Shoes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         <div class="container-right" id="container-right">
+            <div class="product">
+                <img src="images/1 (1).jpg">
+                <h4>shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>150$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (24).jpg">
+                <h4>watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>250$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (21).jpg">
+                <h4>bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>75$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (36).jpg">
+                <h4>t-shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>200$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (35).jpg">
+                <h4>t-shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>100$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (31).jpg">
+                <h4>watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>300$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (4).jpg">
+                <h4>shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>350$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (19).jpg">
+                <h4>bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>90$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (13).jpg">
+                <h4>glasses</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>60$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (12).jpg">
+                <h4>glasses</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>120$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (11).jpg">
+                <h4>shoes</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>230$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (28).jpg">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (27).jpg">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (26).jpg">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (25).jpg">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (23).jpg">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (22).jpg">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (21).jpg" alt="">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (20).jpg">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (2).jpg">
+                <h4>Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (18).jpg">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (17).jpg">
+                <h4>Bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (16).jpg">
+                <h4>Glasses</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (40).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (39).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (38).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (37).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (34).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (33).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (32).jpg">
+                <h4>T-Shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (31).jpg" alt="">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (30).jpg" alt="">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart">+ add to cart</button>
+            </div>
+            <div class="product">
+                <img src="images/1 (29).jpg" alt="">
+                <h4>Watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+                <button class="h-addcart" >+ add to cart</button>
+            </div>
+        </div> 
+            </div>
+        </div>
+        <!-- <div id="myproducts"></div> -->
+    </section>
+
+    <div id="myproducts"></div>
+
+    <!-- footer    -->
+    <div class="footer">
+        <div class="footer-top">
+            <p>have any queries about us?</p>
+            <button><a href="contact.html">contact us</a></button>
+        </div>
+        <div class="footer-bottom">
+            <div class="top-row">
+                <div class="e-col">
+                    <h3 class="head-title">alma</h3>
+                    <div class="e-contents">
+                        <p>The customer is at the heart of our unique business model, which includes design.</p>
+                        <ul class="contact-us">
+                            <li><i class='bx bxs-phone'></i>+880 123 4567 890</li>
+                            <li><i class='bx bxs-envelope'></i></i>alma.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="e-col">
+                    <h3 class="head-title">shopping</h3>
+                    <div class="e-contents">
+                        <li>clothing store</li>
+                        <li>trending shoes</li>
+                        <li>accesories</li>
+                        <li>sale</li>
+                    </div>
+                </div>
+                <div class="e-col">
+                    <h3 class="head-title">shopping</h3>
+                    <div class="e-contents">
+                        <li>contact us</li>
+                        <li>payment methods</li>
+                        <li>delivery</li>
+                        <li>return&</li>
+                        <li>exchange</li>
+                    </div>
+                </div>
+                <div class="e-col">
+                    <h3 class="head-title">newletter</h3>
+                    <div class="e-contents">
+                        <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-row">
+                <div class="e-payment">
+                    <ul>
+                        <li><a href="#"><i class='bx bxl-visa' style='color:#ffffff' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-mastercard' style='color:#ffffff' ></i></a></li>
+                        <li><a href="#"><i class='bx bxl-paypal' style='color:#ffffff' ></i></a></li>
+                    </ul>
+                </div>
+                <div class="e-copyright">
+                    <p>copyright &copy; 2023 all reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/alma.js"></script>
+</body>
+</html>

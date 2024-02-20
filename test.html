@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="seach here...">
+            <button id="search">Search</button>
+        </div>
+        <div class="buttons">
+            <button class="button-value">All</button>
+            <button class="button-value">T-Shirt</button>
+            <button class="button-value">Shirt</button>
+            <button class="button-value">Watches</button>
+            <button class="button-value">Glasses</button>
+            <button class="button-value">Shoes</button>
+            <button class="button-value">Bags</button>
+        </div>
+        <div id="products"></div>
+    </div> -->
+
+    <!-- <input type="text" id="searchInput" placeholder="Search...">
+    <div id="searchResults"></div> -->
+
+    <div class="container">
+        <form action="">
+            <input type="search" id="search-item" placeholder="seach here..." onkeyup="search()">
+        </form>
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="images/1 (1).jpg" alt="">
+                <h4>shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>150$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (24).jpg" alt="">
+                <h4>watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>250$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (21).jpg" alt="">
+                <h4>bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>75$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (36).jpg" alt="">
+                <h4>t-shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>200$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (35).jpg" alt="">
+                <h4>t-shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>100$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (31).jpg" alt="">
+                <h4>watch</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>300$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (4).jpg" alt="">
+                <h4>shirt</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>350$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (19).jpg" alt="">
+                <h4>bag</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>90$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (13).jpg" alt="">
+                <h4>glasses</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>60$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (12).jpg" alt="">
+                <h4>glasses</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>120$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (11).jpg" alt="">
+                <h4>shoes</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>230$</h3>
+            </div>
+            <div class="product">
+                <img src="images/1 (10).jpg" alt="">
+                <h4>shoes</h4>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h3>180$</h3>
+            </div>
+
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
